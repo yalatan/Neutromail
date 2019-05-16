@@ -1,0 +1,1226 @@
+* {
+    margin: 0;
+    padding: 0
+}
+a{
+    text-decoration: none;    
+}
+li{
+    list-style: none;
+}
+@font-face {
+    font-family: Malaga; /* Имя шрифта */
+    src: url(assets/fonts/Malaga\ OT\ Reg\ Italic/); /* Путь к файлу со шрифтом */
+   }
+body {
+    font-family: 'Titillium Web', sans-serif;
+    display: grid;
+    grid-template-rows: 155px 635px 130px 260px 175px 31px 31px 161px 261px 375px 10px
+     318px  282px 160px 77px 33px 51px 10px;
+    grid-template-columns: 1fr 200px 516px 258px 176px 250px 200px 200px 1fr;
+    background-color: white;
+    font-size: 16px;    
+}
+
+.left{     grid-area: 1/1/5/1;   }
+.right{    grid-area: 1/9/5/9; }
+
+/**********HEADER**********/
+.header-logo{
+    grid-area: 1/3/1/3; 
+    color: #858688;    
+    }
+.header_logo{  
+    font-weight: bold;
+    font-size: 1.85em;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+    margin-top: 14%;
+    padding-bottom: 9px;
+    height: 40px;
+}
+.header_logo span{
+    color: rgb(91,66,149);
+}
+.languages {
+    font-weight: normal;
+    height: 27px;
+    font-size: 0.85rem;
+    letter-spacing: 0.07rem;
+    padding-top: 2%;
+}
+.languages a{
+    color: rgb(99,99,99);
+}
+.languages a:hover{
+    font-weight: bold; 
+    border-bottom: 2px solid rgb(99,99,99);
+    text-align: center;
+}
+.header-navigation{
+    grid-area: 1/4/1/7;
+   padding-top: 12.8%;
+    display: flex;
+     font-size: 1rem;    
+     margin-left: 31%;
+ }
+ 
+ .topnav a{
+     color: rgb(99,99,99);
+     font-weight: normal;    
+     text-align: center;  
+      margin-right: 23px;
+      
+ }
+ .topnav a:hover{
+    border-bottom: 3px solid  rgb(91,66,149);
+     text-align: center;
+ }
+ .topnav a.menu_header{
+     display: none;
+ }
+.header-login_signup{
+    grid-area: 1/7/1/9;
+    margin-top: 18.5%;
+    display: flex;
+    } 
+    .fa{
+        padding-left: 4%;
+        margin-top: 4%;
+    }
+    .fa-sign-in{
+        color:rgb(91,66,149);
+    }
+    .login{
+        color: rgb(99,99,99);
+        font-weight: bold; 
+       margin-right: 27%;
+       margin-left: 7%;
+    }
+    .signup{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2%;
+    padding-top: 2%;
+    background-image: url(assets/singup.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 94px;
+    }
+    .signup a{
+        color: #fffffe;         
+    }
+
+/*********MAIN *************/
+/*****FIRST SECTION**********/
+.main_central_image_Mountains{
+    grid-area: 2/2/3/9;
+    background-image: url(assets/main_central_image.png);
+    background-repeat: no-repeat; 
+    background-size: 100%;
+}
+.sectionOneLeft {
+grid-area: 2/2/3/2;
+}
+.sectionOneCentral {
+grid-area: 2/3/3/8;
+font-weight: bold;    
+text-align: center;
+}
+
+.first_line{
+    color: rgb(99,99,99);
+    margin-top: 11.5%;
+    font-size: 3.25vw;
+    padding-left: 5%;
+    letter-spacing: 0.085rem;
+}
+.second_line{
+    /*font-size: 2.25rem;*/
+    font-size: 2vw;
+    color: rgb(99,99,99);
+    margin-top: -0.5%;
+    padding-left: 4.65%;
+    
+}
+.second_line span {
+    color: rgb(252,68,74);
+}
+.third_line{
+    display: flex;
+    justify-content: center;    
+    width: 100%;
+    margin-top: 3%;
+}
+
+.third_line .create_account{
+    margin-left: 3.5%;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.65%;
+    background-image: url(assets/createAccount.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 250px;
+    color: #fffffe; 
+}
+.third_line .create_account p{
+   margin-top: 5%;
+   letter-spacing: 0.07rem;
+}
+.third_line .apple{
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-right: 0.8%;
+    padding-left: 0.8%;
+}
+.third_line .play{
+    margin-left: 0.9%;
+    margin-top: 1%;
+    margin-right: 3%;
+}
+
+.sectionOneRight-right_social_links{
+    grid-area: 2/8/3/8; 
+    text-align: right;
+    padding-top: 80%;
+    }
+
+.right_social_links div{
+    margin-top: 5%;
+    margin-right: 16%;
+}
+
+
+/*****SECOND SECTION**********/
+h1{
+    color: rgb(85,85,85);
+    font-size: 1.9rem;
+    font-weight: normal;
+    margin-top: -10px;
+}
+h3{ margin-top: -9px;
+    color: rgb(149,147,147);
+    font-size: 1rem;
+    letter-spacing: 0.07rem;
+    font-weight: normal;
+    
+}
+.sectionTwoLeft{
+    grid-area: 4/2/4/2; 
+}
+.sectionTwo_Primary{
+    grid-area: 4/3/4/3;
+    border-right: 1px solid grey;
+    padding-left: 21%;
+    padding-right: 6%;
+}
+.main-primary .main_text{
+    padding-left: 4%;
+}
+.main-primary h1{
+    margin-left: 20%;
+}
+.main-primary h3{
+    margin-left: 20%; 
+}
+.main_text{
+    color: rgb(156,154,154);
+    font-size: 0.9rem;
+    margin-top: 26px;
+}
+.main-primary img, .main-central img, .main-secondary img{
+    float: left;   
+}
+.sectionTwo_Central{
+    grid-area: 4/4/4/6;
+    border-right: 1px solid grey;  
+}
+.main-central img{
+    margin-left: 10%;
+    margin-top: -8px;
+}
+.main-central .main_h1{
+    margin-left: -8%;
+}
+.main-central .main_text{
+    margin-left: 10%;
+    margin-right: 6%;
+}
+.sectionTwo_SEcondary{
+    grid-area: 4/6/4/8;
+}
+.main-secondary img{
+    margin-left: 3.5%;
+    margin-top: 4px;
+}
+.main-secondary .main_h1{
+    margin-left: 4.5%;
+}
+.main-secondary .main_text{
+    margin-left: 11%;
+    margin-right: 6%;
+}
+.sectionTwoRight{
+    grid-area: 4/8/4/8;
+    border-top: 1px solid grey;
+}
+.line-right{
+    grid-area: 3/3/3/4;
+    border-right: 1px solid gray; 
+}
+/*****THIRD SECTION**********/
+.physical{
+    grid-area: 5/3/5/6;
+    border-right: 1px solid gray;    
+}
+.physicalSecurity{
+    
+    font-size: 60px;
+    color: rgba(83, 83, 83, 255);
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 49px;
+}
+.physical-text{
+    font-size: 24px;
+    color: rgba(149, 147, 147, 255);
+    text-align: right;
+    margin-right: 58px;
+    padding-left: 193px;
+    line-height: 1;
+}
+.physical-text span{
+ 
+color: #f75d5d;
+
+}
+.learn_more-horizontal-line{
+    grid-area: 6/2/6/5;   
+    border-bottom: 1px solid grey;
+}
+.learn_more{
+    grid-area: 6/5/8/7;
+ 
+}
+.learn_more_text{
+       border: 1px solid gray;
+       border-top-left-radius: 30px; 
+       border-top-right-radius: 30px; 
+       border-bottom-left-radius: 30px; 
+       border-bottom-right-radius: 30px;
+       height: 60px;
+       width: 331px;
+}
+.learn_more p{ 
+    margin-top: 14px;  
+    font-size: 1rem;
+text-align: center;
+}
+.learn_more a{ 
+    color: rgb(99,99,99);
+}
+
+.image_laptop{
+    grid-area: 8/2/14/9; 
+    margin-top: -32px;
+    background-image: url(assets/laptop.png);
+    background-repeat: no-repeat; 
+    background-size: 100%;
+}
+.boston_gerald{
+    grid-area: 9/3/9/6;
+  font-family: Malaga;
+  font-style: italic;
+  padding-left: 22%;
+  padding-right: 25%;
+  color: #8e8e8e;
+}
+.boston_gerald-text{
+    font-size: 1.65rem;
+    text-align: left;
+}
+.boston_gerald-bottom{
+    color: #8e8e8e;
+    font-size: 1.1rem;
+    text-align: left;
+    font-weight: bold;
+    padding-top: 10px;
+}
+/********ANY DEVICE*********/
+.any_device{
+    grid-area: 10/4/10/6;
+    text-align: right;
+    padding-right: 10%;
+}
+.any_device-header{
+    font-size: 2.1rem;
+    letter-spacing: 0.065rem;
+    color: rgba(83, 83, 83, 255);
+    margin-bottom: 7px;
+}
+.any_device-text{
+    font-size: 1rem;
+    color: rgba(149, 147, 147, 255);
+    margin-left: -15%;
+}
+.any_device-images{
+    margin-top: 27px;
+}
+.any_device-images a{
+   margin-right: 1%;
+}
+.line-horizontal{
+    grid-area: 11/3/11/9;
+    border-top: thin solid grey;  
+    margin-left: 13%;
+    opacity: 0.5;
+}
+
+
+
+
+/*************PRIVACY*****************/
+.privasy{
+    grid-area: 12/2/12/9; 
+    text-align: center;
+    color: rgba(83, 83, 83, 255);
+}
+.privasy-top_line{
+    font-size: 2.3rem;
+    color: rgba(83, 83, 83, 255);
+    margin-top: 54px;
+}
+.privasy-bottom_line{
+    font-size: 1.85rem;
+    margin-top: -11px;
+  
+}
+.privasy-images{
+    margin-top: 35px;    
+    display: flex;
+    height: 55px;
+    justify-content: center;
+  
+}
+.privasy_upgrate{
+    background-image: url(assets/upgrate.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 13.5%;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 55px;
+    justify-content: center;
+}
+.privasy_donate{
+    background-image: url(assets/donate.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 9%;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}
+
+.privasy-images a{
+    color: #fffffe; 
+    }
+/****************sponsors_bottom********************/
+.sponsors_bottom{
+    grid-area: 13/2/13/7;
+    padding-right: 2%;
+    padding-top: 17px;
+    text-align: right;
+    font-size: 0.85rem;
+    color: grey;
+    border-right: 1px solid grey;
+    border-top: 1px solid grey;
+}   
+
+.contacts{
+    grid-area: 14/3/14/3; 
+    font-size: 0.9rem; 
+    padding-left: 4%;
+    border-left: 1px solid grey;
+}
+.contacts-href{
+margin-top: 29px;
+}
+.contacts a{
+    border-bottom: 2px solid grey;
+    color:grey;
+}
+.legal-neutronMail{
+    grid-area: 14/5/14/7;
+    display: flex;
+    font-size: 0.9rem;
+    list-style-position: outside;
+    text-align: right;
+    border-right: 1px solid grey;
+}
+
+.company_header, .legal_header, .neutronMail_header{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.company{
+    grid-area: 14/4/14/4;
+    padding-right: 10%;
+    margin-right: 10%;
+    font-size: 0.9rem;
+    list-style-position: outside;
+    text-align: right;
+    border-right: 1px solid grey;
+}
+.legal{
+    margin-left: 17%;
+    
+}
+.neutronMail{
+    margin-left: 25%;
+}
+.company li, .legal-neutronMail li{
+    list-style-type: none;
+    margin-top: 22px;
+    margin-bottom: -20px;
+}
+.company a, .legal-neutronMail a{
+    color: grey;
+}
+
+
+
+/*********FOOTER***************/
+.pageFooter_links {
+    grid-area: 16/3/16/3;
+    display: flex;
+    border-right: 1px solid grey;
+    font-size: 0.75rem;
+    } 
+.pageFooter_links a{ 
+     color: #858688;
+     margin-right: 5%;
+} 
+.footer-bottom{
+    grid-area: 17/3/17/3;   
+    color: #858688;
+    font-size: 0.75rem; 
+    border-right: 1px solid grey;
+}
+.empty_footer_bottom{
+    grid-area: 18/2/18/8; 
+}
+.line-vertical-bottom{
+    grid-area: 15/4/18/4;
+    margin-right: 10%;
+    border-right: 1px solid grey;
+}
+
+/*RESPONSIVE Адаптация при уменьшении экрана до  планшета (max-width: 768px)*/
+@media only screen and (max-width: 1799px){
+    
+body {
+    grid-template-rows: 155px 635px 1vw 10vw 175px 31px 31px 161px 261px 20vw 10px
+     15vw  10vw 160px 77px 33px 51px 10px;
+    grid-template-columns: 0% 10% 28% 14% 12% 14% 11% 11% 0%;
+}
+
+.left{ 
+display: none }
+.right{   
+     display: none;}
+
+/**********HEADER**********/
+.languages {
+    font-size: 12px;
+}
+
+/*********MAIN *************/
+/*****FIRST SECTION**********/
+
+.first_line{
+    margin-top: 10%;
+}
+.second_line{
+    margin-top: 1vw;
+}
+.third_line .create_account{
+    width: 18%;
+    height: 68px;
+    margin-top: 0%;
+}
+.third_line .create_account p{
+    font-size: 1.2vw;
+    
+}
+.third_line .apple img{
+    width: 100%;
+    
+}
+.third_line .apple{
+    margin-top: 0%;
+}
+.third_line .play img{
+    width: 100%;
+}
+.third_line .play{
+    margin-top:  0%;
+}
+
+/*****THIRD SECTION**********/
+
+.physicalSecurity{
+    font-size: 3.5vw;
+    margin-top: 1%;
+    margin-right: 3%;
+}
+.physical-text{
+    font-size: 1.3vw;
+    margin-right: 4%;
+    padding-left: 21%;
+}
+
+.boston_gerald{
+   /* grid-area: 9/3/9/6;*/
+    padding-left: 22%;
+    padding-right: 25%;
+}
+.boston_gerald-text{
+    font-size: 1.5vw;
+    margin-top: -28px;
+}
+/********ANY DEVICE*********/
+
+.line-horizontal{
+    display: none;
+}
+
+
+.any_device{
+    padding-right: 0;
+    margin-top: -15%;
+    margin-left: -15%;
+}
+.any_device-header{
+    padding-right: 10%;
+    margin-bottom: -1%;
+}
+.any_device-text{
+    padding-right: 10%;
+    
+    margin-left: -10%;
+}
+.any_device-images{
+    margin-left: -15%;
+}
+
+
+
+/*************PRIVACY*****************/
+.line-horizontal-bottom{
+    display: none;   
+}
+
+}
+
+@media only screen and (max-width: 1563px){
+    body{
+        grid-template-rows: 7% 34vw 2% 8% 8% 31px 31px 161px 8% 20vw 10px
+        15vw  10vw 160px 77px 33px 51px 10px;
+        
+    }
+    .third_line .create_account{
+        width: 20%;
+    }
+    .third_line .create_account p{
+        font-size: 1.2vw;
+    }
+    .third_line .apple img{
+        width: 75%;
+    }
+    .third_line .apple{
+        margin-top: 0.5%;
+    }
+    .third_line .play img{
+        width: 75%;
+    }
+    .third_line .play{
+        margin-top:  0.5%;
+    }
+    .sectionTwo_Primary{
+        padding-right: 0%;
+    }
+    .main-primary .main_text{
+        padding-left: 0%;
+    }
+    .main-primary h1{
+        margin-left: 15%;
+    }
+    .main-primary h3{
+        margin-left: 15%; 
+    }
+    .privasy-images{
+        margin-top: 15px; 
+    }
+   
+    .legal{
+        margin-left: 15%;
+    }
+    .neutronMail{
+        margin-left: 15%;
+    }
+    
+    }
+   
+    @media only screen and (max-width: 1363px){
+body{
+    grid-template-rows: 7% 34vw 2% 8% 8% 31px 31px 161px 8% 20vw 10px
+    15vw  10vw 160px 77px 33px 51px 10px;
+ }
+ h1{
+    font-size: 2vw;
+}
+/*****THIRD SECTION**********/
+
+.physicalSecurity{
+    font-size: 2.2vw;
+    padding-top: 6vw;
+}
+.physical-text{
+    font-size: 1.5vw;
+}
+.boston_gerald{
+  margin-top: -5%;
+}
+.boston_gerald-text{
+    font-size: 1.5vw;
+}
+.boston_gerald-bottom{
+    font-size: 1vw;
+}
+/********ANY DEVICE*********/
+
+.any_device-header{
+    font-size: 2.2vw;
+}
+.any_device-text{
+    font-size: 1.5vw;
+}
+.any_device-images{
+    margin-top: 15px;
+    padding-right: 10%;
+}
+.appStore img{
+    height: 4vw;
+}
+.googlePlay img{
+    height: 4vw; 
+}
+.sponsors_bottom{
+    padding-left: 2%;
+    padding-top: 5%;
+    text-align: left;
+    border-right: none;
+    border-top: none;
+} 
+
+.legal-neutronMail{
+    grid-area: 14/5/14/8;
+    border-right: none;
+}
+
+.company{
+    border-right: none;
+}
+
+/*********FOOTER***************/
+.pageFooter_links {
+    grid-area: 16/3/16/6;
+    border-right: none;
+    } 
+
+.footer-bottom{
+    grid-area: 17/3/17/6;
+    border-right: none;
+}
+.empty_footer_bottom{
+    grid-area: 18/2/18/8; 
+}
+.line-vertical-bottom{
+    border-right: none;
+}
+    
+}
+@media only screen and (max-width: 1230px){
+    body{
+        grid-template-rows: 7% 34vw 2% 8% 8% 31px 31px 161px 8% 20vw 10px
+    15vw  10vw 160px 77px 33px 51px 10px;
+     }
+     .boston_gerald{
+        margin-top: -10%;
+     }
+     .any_device-header{
+        margin-top: -10%;
+     }
+    .any_device-text{
+        font-size: 1.1vw;
+    }
+    .privasy{
+        margin-top: -10%;
+    }
+
+    .sponsors_bottom{
+        padding-top: 0%;
+        margin-top: -3%;
+    } 
+     
+    }
+
+    @media only screen and (max-width: 1020px){
+        body{
+            grid-template-rows: 7% 34vw 2% 10% 8% 31px 31px 161px 8% 20vw 10px
+        15vw  10vw 160px 77px 33px 51px 10px;
+        grid-template-columns: 0% 10% 23% 21% 12% 14% 11% 10% 0%;
+         }
+
+         h1{
+            font-size: 2.5vw;
+            margin-top: -10px;
+        }
+        h3{ margin-top: -9px;
+            font-size: 1.5vw;
+        }
+        
+        .sectionTwo_Primary{
+            grid-area: 4/2/4/4;
+            padding-left: 10%;
+            padding-right: 2%;
+        }
+    
+        .sectionTwo_SEcondary{
+            grid-area: 4/6/4/9;
+        }
+        .sectionTwoRight{
+            border-top: none;
+        }
+        .boston_gerald{
+            margin-top: -20%;
+         }
+         .boston_gerald-text{
+            margin-top: 0;
+        }
+        .privasy-top_line{
+            font-size: 2.5vw;
+            margin-top: 4%;
+        }
+        .privasy-bottom_line{
+            font-size: 1.85vw;
+            margin-top: -9px;
+        }
+        .sponsors_bottom{
+            grid-area: 13/2/13/9;
+            margin-top: -8%;
+            font-size: 1.5vw;
+        } 
+
+        }
+
+@media only screen and (max-width: 798px){
+    body {
+        grid-template-rows: 125px 34vw 5px 120px 120px 120px 120px 30px 10px 10px 210px 130px 175px 10px
+         218px  20px  51px 10px;
+        grid-template-columns: repeat(9, 1fr);
+        font-size: 10px;    
+    }
+    
+    /**********HEADER**********/
+    .header-logo{
+        grid-area: 1/1/1/4;
+        padding-left: 5vw;
+        margin-top: 0;
+        padding-top: 0px;
+     }
+  
+    .header-navigation{
+        grid-area: 1/3/1/7;
+        margin-top: 0;
+        padding-top: 20px;
+        font-size: 2.2vw;
+     }
+     
+     .topnav a{ 
+          margin-right: 18px;
+     }
+    
+    .header-login_signup{
+        grid-area: 1/7/1/10;
+        display: block;
+    }
+    
+        .fa{
+            padding-left: 0%;
+            margin-top: 4%;
+            margin-right: 10px;
+        }
+     
+        .login{
+           margin-right: 0%;
+           margin-left: 7%;
+        }
+        .signup{
+        margin-top: 2%;
+        padding-top: 2%;
+        width: 44px;
+        }  
+    
+    /*********MAIN *************/
+    /*****FIRST SECTION**********/
+    .main_central_image_Mountains{
+        grid-area: 2/1/3/10;
+    }
+        
+    .first_line{
+        margin-top: 25px;
+    }
+ 
+    .third_line .create_account{
+        width: 150px; 
+    }
+    .third_line .create_account p{
+       margin-top: 6%;
+      font-size: 2vw;
+    }
+    .third_line .apple{
+        margin: 0;
+    }
+    .third_line .play{
+        margin-left: 0%;
+        margin-top: 0%;
+        margin-right: 0%;
+    }
+    
+    .sectionOneRight-right_social_links{
+        grid-area: 2/9/3/9; 
+        }
+    
+    .right_social_links div{
+        margin-top: 8%;
+    }
+    
+    
+    /*****SECOND SECTION**********/
+    h1{
+        font-size: 3.5vw;
+        margin-top: 0;
+    }
+    h3{
+         margin-top: 0;
+        font-size:  2.5vw;
+    }
+    
+    .sectionTwo_Primary{
+        grid-area: 4/1/4/10;
+        border-right: none;
+        border-bottom:1px solid grey;
+        padding-left: 2%;
+        padding-right: 2%;
+        text-align: justify;
+    }
+    .main-primary .main_text{
+        padding-left: 0;
+    }
+    .main-primary h1{
+        margin-left: 0;
+    }
+    .main-primary h3{
+        margin-left: 0; 
+    }
+    .main_text{
+        font-size: 0.9rem;
+        margin-top: 0;
+    }
+    
+    .sectionTwo_Central{
+        grid-area: 5/1/5/10;
+        border-right: none; 
+        border-bottom:1px solid grey;
+        padding-left: 2%;
+        padding-right: 2%;
+        text-align: justify; 
+    }
+   .main-central img{
+        margin-left: -2vw;
+        margin-top: 0;
+    }
+    .main-central .main_h1{
+        margin-left: -2vw;
+    }
+    .main-central .main_text{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .sectionTwo_SEcondary{
+        grid-area: 6/1/6/10;
+        border-bottom:1px solid grey;
+        padding-left: 2%;
+        padding-right: 2%;
+        text-align: justify;
+    }
+    .main-secondary img{
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .main-secondary .main_h1{
+        margin-left: 0;
+    }
+    .main-secondary .main_text{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .sectionTwoRight{
+        border-top: none;
+    }
+    .line-right{
+        border-right: none; 
+    }
+    /*****THIRD SECTION**********/
+    .physical{
+        grid-area: 7/1/7/8;
+        border-right: 1px solid gray;    
+    }
+    .physicalSecurity{
+        font-size: 3.5vw;
+        text-align: left;
+        margin-top: 0.5vw;
+        margin-right: 2px;
+        padding-left: 5vw;
+    }
+    .physical-text{
+        font-size: 2.5vw;
+        text-align: left;
+        margin-right: 2px;
+        padding-left: 5vw;
+    }
+    
+    .learn_more-horizontal-line{
+        grid-area: 8/1/8/4;   
+        border-bottom: 1px solid grey;
+    }
+    .learn_more{
+        grid-area: 8/4/10/9;
+     
+    }
+    .learn_more_text{
+           border: 1px solid gray;
+           border-top-left-radius: 30px; 
+           border-top-right-radius: 30px; 
+           border-bottom-left-radius: 30px; 
+           border-bottom-right-radius: 30px;
+           height: 5vw;
+           width: 40vw;
+    }
+    .learn_more p{ 
+        margin-top: 2%;  
+        font-size: 2vw;
+    }
+    .image_laptop{
+        display: none;
+    }
+    .boston_gerald{
+    grid-area: 11/1/11/4;
+    margin-top: 0;
+      padding-left: 10%;
+      padding-right: 6%;
+      padding-top: 1%;
+      border-right: 1px solid grey;
+    }
+    .boston_gerald-text{
+        font-size: 2.2vw;
+        text-align: left;
+    }
+    .boston_gerald-bottom{
+        font-size: 1.2vw;
+    }
+    /********ANY DEVICE*********/
+    .any_device{
+        grid-area: 11/4/11/10;
+        padding-right: 0;
+        margin-top: 10%;
+    }
+    .any_device-header{
+        font-size: 1.7rem;
+        margin-bottom: 0px;
+    }
+    .any_device-text{
+        font-size: 1rem;
+        margin-left: 10vw;
+    }
+    
+    .line-horizontal{
+        grid-area: 14/1/14/9;  
+        margin-left: 13%;
+    }
+    
+    
+    
+    
+    /*************PRIVACY*****************/
+    .privasy{
+        grid-area: 12/2/12/9; 
+        margin-top: 1vw;
+        text-align: center;
+    }
+
+    .privasy-top_line{
+        font-size: 3vw;
+        margin-top: 5vw;
+    }
+    .privasy-bottom_line{
+        font-size: 2.55vw;
+        margin-top: 0;
+      
+    }
+    .privasy-images{
+        margin-top: 1vw;    
+        display: flex;
+        height: 35px;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0;
+    }
+    .privasy_upgrate{
+        width: 115px;
+        margin-right: 5%;
+        font-size: 2vw;
+    }
+    .privasy_donate{
+        width: 75px;
+        font-size: 2vw;
+    }
+    
+    /****************sponsors_bottom********************/
+    .sponsors_bottom{
+        display: none;
+    }   
+    
+    .contacts{
+        grid-area: 13/2/13/9; 
+        margin-top: 5%;
+    }
+  
+    .legal-neutronMail{
+        grid-area: 15/4/15/9;
+        margin-left: 0px;
+    }
+    .company{
+        grid-area: 15/3/15/3;
+    }
+    
+    
+    
+    /*********FOOTER***************/
+    .pageFooter_links {
+        grid-area: 16/2/16/9;
+        
+        } 
+   
+    .footer-bottom{
+        grid-area: 17/1/17/10;   
+        
+    }
+    .empty_footer_bottom{
+        grid-area: 18/1/18/10; 
+    }
+   
+
+
+}
+@media only screen and (max-width: 510px){
+    body {
+        grid-template-rows: 125px 34vw 5px 120px 140px 140px 110px 20px 10px 10px 110px 180px 100px 175px 250px
+         50px  20px 10px;
+    }
+    
+    /**********HEADER**********/
+    .header-navigation{
+        grid-area: 1/3/1/8;
+     }
+     
+    .header-login_signup{
+        grid-area: 1/8/1/10;
+    }
+    /*********MAIN *************/
+   
+    /*****THIRD SECTION**********/
+    
+    .boston_gerald{
+    grid-area: 11/1/11/10;
+      padding-left: 5%;
+      border-right: none;
+    }
+    .boston_gerald-text{
+        font-size: 3vw;
+    }
+    .boston_gerald-bottom{
+        font-size: 2.5vw;
+    }
+    /********ANY DEVICE*********/
+    .any_device{
+        grid-area: 12/1/12/10;
+        padding-left: 5%;
+    }
+    /*************PRIVACY*****************/
+    .privasy{
+        grid-area: 13/2/13/9; 
+    }
+
+    .privasy-top_line{
+        text-align: left;
+    }
+   
+    /****************sponsors_bottom********************/
+    .contacts{
+        grid-area: 14/2/14/9; 
+        margin-top: 5%;
+    }
+  
+    .legal-neutronMail{
+        grid-area: 15/3/15/10;
+        border-right: 1px solid grey;
+        margin-left: 31px;
+    }
+    .legal{
+      
+        margin-right: 5px;
+        padding-right: 5px;
+       
+        border-right: 1px solid grey;
+    }
+    .neutronMail{
+        margin-right: 5px;  
+    }
+    .company{
+        grid-area: 15/1/15/3;
+        border-right: 1px solid grey;
+    }
+    
+    
+    
+    /*********FOOTER***************/
+    .pageFooter_links {
+        grid-area: 16/1/16/10;
+        padding-left: 5%;
+        } 
+   
+    .footer-bottom{
+        grid-area: 17/1/17/10;   
+        
+    }
+    .empty_footer_bottom{
+        grid-area: 18/1/18/10; 
+    }
+   
+
+
+}
